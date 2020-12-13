@@ -33,7 +33,7 @@ type Config struct {
 
 func (c Config) getCommand() (string, []string) {
 	if c.System == "macos" {
-		return "osascript", []string{"-e", `tell app "loginwindow" to «event aevtrsdn»`}
+		return "osascript", []string{"-e", `tell app "System Events" to shut down`}
 	} else if c.System == "windows" {
 		return "shutdown", []string{"-s", "-t", "0"}
 	} else if c.System == "linux" {
