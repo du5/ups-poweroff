@@ -1,5 +1,5 @@
 # ups-poweroff
-用于 macOS 网络 UPS 工具, 理论上适用于全部 `pmset -g batt` 可识别信息的 UPS。
+macOS 网络 UPS 工具, 理论上适用于全部 `pmset -g batt` 可识别信息的 UPS，用于局域网设备获取 UPS 电量情况。
 
 ## make
 
@@ -16,7 +16,7 @@ mv ups-poweroff /share/homes/
 
 ```bash
 # 客户端
-# cp .client.yaml /var/ups-poweroff/.ups-config.yaml
+# sudo cp .client.yaml /var/ups-poweroff/.ups-config.yaml
 # 服务端
 # linux/macOS
 sudo cp .service.yaml /var/ups-poweroff/.ups-config.yaml
@@ -42,6 +42,7 @@ systemctl status ups-poweroff.service
 # macOS
 mv ups-poweroff.plist ~/Library/LaunchAgents
 # 重启后会自动启动
+# 查看状态
 launchctl list | grep ups
 ```
 
