@@ -1,0 +1,11 @@
+[Unit]
+Description=ups-poweroff
+After=network.target
+
+[Service]
+ExecStart=/var/ups-poweroff/ups-poweroff
+Restart=always
+LimitNOFILE=512000
+
+[Install]
+WantedBy=multi-user.target

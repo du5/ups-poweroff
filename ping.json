@@ -1,0 +1,10 @@
+{
+    "ok": true,
+    "status": {
+        "power": 85,
+        "ps_from": "AC Power",
+        "remaining": "",
+        "status": "charging",
+        "ups_name": "SANTAK TG-BOX"
+    }
+}

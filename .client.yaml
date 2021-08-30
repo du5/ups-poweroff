@@ -1,0 +1,13 @@
+# 模式 client/service
+mode: client
+
+# 服务端监听地址
+listen: 192.168.1.3:65534
+
+# 服务端失去响应 20 次后, 客户端关闭
+time_out: 20
+# 客户端每 5 秒询问一次服务端
+tc_time: 5
+
+# ups 剩余 50% 电量时 客户端关机
+ups_last: 50
